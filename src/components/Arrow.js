@@ -47,7 +47,7 @@ Arrow.propTypes = {
 }
 
 export default styled(Arrow)`
-  color: ${props => (props.disabled ? '#caccce' : '#646464')};
+  color: ${props => (props.disabled ? '#646464' : '#caccce' )};
 
   ${props => (props.inverted ? 'margin-left: 24px;' : 'margin-right: 24px;')};
   ${props =>
@@ -59,6 +59,6 @@ export default styled(Arrow)`
   `};
 
   &:hover {
-    color: ${props => (props.disabled ? '#caccce' : '#000')};
+    color: ${props => (props.disabled ? '#000' : '#caccce')};
   }
 `
